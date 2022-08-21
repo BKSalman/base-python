@@ -4,6 +4,7 @@ ENV MODULE_NAME=app.main:app
 ENV WORKER_CLASS=uvicorn.workers.UvicornWorker
 
 ENV SQLALCHEMY_WARN_20=true
+ENV PORT=$port
 
 COPY /start.sh /start.sh
 RUN chmod +x /start.sh
